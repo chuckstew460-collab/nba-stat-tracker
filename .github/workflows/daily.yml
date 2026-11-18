@@ -1,0 +1,62 @@
+name: Daily pipeline
+
+on:
+  schedule:
+    # NBA games finish by about 07:00 UTC and ESPN's stats settle soon after.
+    - cron: "23 11 * * *"   # main run, 11:23 UTC
+    # Backup run the same UTC day, in case GitHub drops or delays the first.
+    # A second run replaces the day's raw files and updates the day's issue,
+    # so the day still counts once.
+    - cron: "41 17 * * *"
+  workflow_dispatch:        # "Run workflow" button for a manual run
+
+permissions:
+  contents: write   # commit the data
+  issues: write     # open the day's issue, close the previous one
+
+concurrency:
+  group: daily-pipeline
+  cancel-in-progress: false
+
+jobs:
+  run:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v5
+
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+          cache: pip
+
+      - name: Install
+        run: pip install -r requirements.txt
+
+      - name: 1. Fetch every source (a failing source is recorded, not fatal)
+        run: python -m tracker.fetch
+
+      - name: 2. Build history.csv from the raw files
+        run: python -m tracker.build
+
+      - name: 3. Write status.json
+        run: python -m tracker.status
+
+      - name: 4. Open the day's issue and close the previous one
+        continue-on-error: true
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python -m tracker.issue
+
+      - name: 5. Commit raw files, history and status
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data
+          MSG=$(python -c "import json; s = json.load(open('data/status.json')); ok = sum(x['ok'] for x in s['sources']); print(f\"Daily run {s['run_date']}: {ok}/{len(s['sources'])} sources ok, {s['items']} items, +{s['new_today']} new, -{s['gone_today']} gone\")")
+          git commit -m "$MSG" || { echo "Nothing to commit"; exit 0; }
+          for attempt in 1 2 3; do
+            git pull --rebase origin main && git push origin HEAD:main && exit 0
+            sleep 10
+          done
+          exit 1
