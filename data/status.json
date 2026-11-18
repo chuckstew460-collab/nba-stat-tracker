@@ -1,0 +1,31 @@
+{
+  "run_time": "2026-11-18T02:17:47Z",
+  "run_date": "2026-11-18",
+  "first_run_date": "2026-11-18",
+  "days_with_success": 1,
+  "items": 501,
+  "new_today": 0,
+  "gone_today": 0,
+  "sources": [
+    {
+      "name": "espn_players",
+      "ok": true,
+      "count": 471,
+      "format": "json",
+      "error": ""
+    },
+    {
+      "name": "espn_teams",
+      "ok": true,
+      "count": 30,
+      "format": "json",
+      "error": ""
+    }
+  ],
+  "previous": {
+    "espn_players": null,
+    "espn_teams": null
+  },
+  "new_items": [],
+  "gone_items": []
+}
