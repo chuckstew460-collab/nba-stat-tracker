@@ -1,16 +1,16 @@
 {
-  "run_time": "2026-11-18T23:34:29Z",
-  "run_date": "2026-11-18",
+  "run_time": "2026-11-19T19:32:44Z",
+  "run_date": "2026-11-19",
   "first_run_date": "2026-11-18",
-  "days_with_success": 1,
-  "items": 501,
-  "new_today": 0,
+  "days_with_success": 2,
+  "items": 502,
+  "new_today": 1,
   "gone_today": 0,
   "sources": [
     {
       "name": "espn_players",
       "ok": true,
-      "count": 471,
+      "count": 472,
       "format": "json",
       "error": ""
     },
@@ -23,9 +23,16 @@
     }
   ],
   "previous": {
-    "espn_players": null,
-    "espn_teams": null
+    "espn_players": "2026-11-18",
+    "espn_teams": "2026-11-18"
   },
-  "new_items": [],
+  "new_items": [
+    {
+      "item_id": "player-2991043",
+      "item": "Caris LeVert",
+      "team": "MIL",
+      "source": "espn_players"
+    }
+  ],
   "gone_items": []
 }
