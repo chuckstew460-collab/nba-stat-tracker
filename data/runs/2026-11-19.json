@@ -1,5 +1,5 @@
 {
-  "run_time": "2026-11-19T19:32:44Z",
+  "run_time": "2026-11-19T23:47:47Z",
   "date": "2026-11-19",
   "sources": [
     {
@@ -10,7 +10,7 @@
       "count": 472,
       "bytes": 6138788,
       "error": "",
-      "seconds": 0.7
+      "seconds": 0.3
     },
     {
       "name": "espn_teams",
