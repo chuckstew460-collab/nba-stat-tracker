@@ -1,10 +1,10 @@
 {
-  "run_time": "2026-11-20T23:19:49Z",
-  "run_date": "2026-11-20",
+  "run_time": "2026-11-21T18:06:58Z",
+  "run_date": "2026-11-21",
   "first_run_date": "2026-11-18",
-  "days_with_success": 3,
+  "days_with_success": 4,
   "items": 503,
-  "new_today": 1,
+  "new_today": 0,
   "gone_today": 0,
   "sources": [
     {
@@ -23,16 +23,9 @@
     }
   ],
   "previous": {
-    "espn_players": "2026-11-19",
-    "espn_teams": "2026-11-19"
+    "espn_players": "2026-11-20",
+    "espn_teams": "2026-11-20"
   },
-  "new_items": [
-    {
-      "item_id": "player-5108024",
-      "item": "Yanic Konan Niederhauser",
-      "team": "LAC",
-      "source": "espn_players"
-    }
-  ],
+  "new_items": [],
   "gone_items": []
 }
