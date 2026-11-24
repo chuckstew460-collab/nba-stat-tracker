@@ -1,16 +1,16 @@
 {
-  "run_time": "2026-11-24T03:28:20Z",
+  "run_time": "2026-11-24T21:24:44Z",
   "run_date": "2026-11-24",
   "first_run_date": "2026-11-18",
   "days_with_success": 7,
-  "items": 504,
-  "new_today": 0,
+  "items": 511,
+  "new_today": 7,
   "gone_today": 0,
   "sources": [
     {
       "name": "espn_players",
       "ok": true,
-      "count": 474,
+      "count": 481,
       "format": "json",
       "error": ""
     },
@@ -26,6 +26,49 @@
     "espn_players": "2026-11-23",
     "espn_teams": "2026-11-23"
   },
-  "new_items": [],
+  "new_items": [
+    {
+      "item_id": "player-3137259",
+      "item": "Gabe Vincent",
+      "team": "SAC",
+      "source": "espn_players"
+    },
+    {
+      "item_id": "player-3913176",
+      "item": "Brandon Ingram",
+      "team": "LAC",
+      "source": "espn_players"
+    },
+    {
+      "item_id": "player-4433569",
+      "item": "Johni Broome",
+      "team": "MIN",
+      "source": "espn_players"
+    },
+    {
+      "item_id": "player-4433618",
+      "item": "Harrison Ingram",
+      "team": "UTAH",
+      "source": "espn_players"
+    },
+    {
+      "item_id": "player-4683736",
+      "item": "Kobe Bufkin",
+      "team": "UTAH",
+      "source": "espn_players"
+    },
+    {
+      "item_id": "player-4684682",
+      "item": "Jonas Aidoo",
+      "team": "UTAH",
+      "source": "espn_players"
+    },
+    {
+      "item_id": "player-4702670",
+      "item": "Grant Nelson",
+      "team": "BKN",
+      "source": "espn_players"
+    }
+  ],
   "gone_items": []
 }
