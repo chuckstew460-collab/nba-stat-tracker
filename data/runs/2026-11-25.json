@@ -1,5 +1,5 @@
 {
-  "run_time": "2026-11-25T01:35:03Z",
+  "run_time": "2026-11-25T20:32:26Z",
   "date": "2026-11-25",
   "sources": [
     {
@@ -8,9 +8,9 @@
       "url": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/statistics/byathlete",
       "ok": true,
       "count": 481,
-      "bytes": 6255617,
+      "bytes": 6256132,
       "error": "",
-      "seconds": 0.4
+      "seconds": 0.2
     },
     {
       "name": "espn_teams",
@@ -18,9 +18,9 @@
       "url": "https://site.web.api.espn.com/apis/common/v3/sports/basketball/nba/statistics/byteam",
       "ok": true,
       "count": 30,
-      "bytes": 271885,
+      "bytes": 271993,
       "error": "",
-      "seconds": 0.2
+      "seconds": 0.0
     }
   ]
 }
