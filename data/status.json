@@ -1,16 +1,16 @@
 {
-  "run_time": "2026-11-26T01:08:37Z",
+  "run_time": "2026-11-26T20:20:04Z",
   "run_date": "2026-11-26",
   "first_run_date": "2026-11-18",
   "days_with_success": 9,
-  "items": 511,
-  "new_today": 0,
+  "items": 512,
+  "new_today": 1,
   "gone_today": 0,
   "sources": [
     {
       "name": "espn_players",
       "ok": true,
-      "count": 481,
+      "count": 482,
       "format": "json",
       "error": ""
     },
@@ -26,6 +26,13 @@
     "espn_players": "2026-11-25",
     "espn_teams": "2026-11-25"
   },
-  "new_items": [],
+  "new_items": [
+    {
+      "item_id": "player-4838721",
+      "item": "Tyler Nickel",
+      "team": "NY",
+      "source": "espn_players"
+    }
+  ],
   "gone_items": []
 }
