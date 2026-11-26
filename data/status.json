@@ -1,8 +1,8 @@
 {
-  "run_time": "2026-11-25T20:32:26Z",
-  "run_date": "2026-11-25",
+  "run_time": "2026-11-26T01:08:37Z",
+  "run_date": "2026-11-26",
   "first_run_date": "2026-11-18",
-  "days_with_success": 8,
+  "days_with_success": 9,
   "items": 511,
   "new_today": 0,
   "gone_today": 0,
@@ -23,8 +23,8 @@
     }
   ],
   "previous": {
-    "espn_players": "2026-11-24",
-    "espn_teams": "2026-11-24"
+    "espn_players": "2026-11-25",
+    "espn_teams": "2026-11-25"
   },
   "new_items": [],
   "gone_items": []
