@@ -1,16 +1,16 @@
 {
-  "run_time": "2026-11-28T00:41:07Z",
+  "run_time": "2026-11-28T19:00:39Z",
   "run_date": "2026-11-28",
   "first_run_date": "2026-11-18",
   "days_with_success": 11,
-  "items": 512,
-  "new_today": 0,
+  "items": 514,
+  "new_today": 2,
   "gone_today": 0,
   "sources": [
     {
       "name": "espn_players",
       "ok": true,
-      "count": 482,
+      "count": 484,
       "format": "json",
       "error": ""
     },
@@ -26,6 +26,19 @@
     "espn_players": "2026-11-27",
     "espn_teams": "2026-11-27"
   },
-  "new_items": [],
+  "new_items": [
+    {
+      "item_id": "player-3102530",
+      "item": "Jusuf Nurkic",
+      "team": "UTAH",
+      "source": "espn_players"
+    },
+    {
+      "item_id": "player-4432181",
+      "item": "Julian Strawther",
+      "team": "DEN",
+      "source": "espn_players"
+    }
+  ],
   "gone_items": []
 }
